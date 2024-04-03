@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" href="style1.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <div class="nav-items">
+            <a href="home.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="content_ST2.html">Content</a>
+            <a href="profile.html">Student Details</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </nav>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Us</h2>
+                <form action="https://formspree.io/f/mqkryngw" method="POST">
+				<input type="text" class="field" name="name" placeholder="Your Name" required> <!-- Added name attribute -->
+				<input type="email" class="field" name="_replyto" placeholder="Your Email" required> <!-- Added name attribute and changed type to email -->
+				<textarea placeholder="Message" class="field" name="message" required></textarea> <!-- Added name attribute -->
+				<button class="btn" type="submit">Send</button> <!-- Added type attribute -->
+				<footer>
+					<p>For more information, visit our <a href="pageEditor_ST2.html" target="_blank">Editor's Page</a>.</p>
+				</footer>
+                </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

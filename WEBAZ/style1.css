@@ -1,0 +1,133 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+nav {
+    height: 70px;
+    background: rgb(255, 255, 255); /* Background color with opacity */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem; /* Corrected font size */
+}
+
+nav a:hover {
+    color: #8faf97;
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #7e7e7e;/*box*/
+}
+.right{
+	padding: 25px 40px;
+}
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #000000;/*line*/
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);/*field*/
+	outline: none;
+	background-color: rgba(77, 77, 77, 0.6);/*field*/
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(7, 42, 15, 0.1);/*field*/
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #424242;/*button*/
+	color: #fff;/*button*/
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #3535357b;/*button*/
+}
+
+.field:focus{
+    border: 40px solid rgba(182, 182, 184, 0.47);/*field*/
+    background-color: #bdbdbd;
+}
+
+footer {
+    background: #f2f2f2;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
